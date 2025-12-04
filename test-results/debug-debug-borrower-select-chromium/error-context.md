@@ -1,0 +1,109 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - link:
+              - /url: /dashboard
+              - heading [level=1]: Loandisk Clone
+            - generic:
+              - link:
+                - /url: /dashboard
+                - generic:
+                  - img
+                  - text: Dashboard
+              - link:
+                - /url: /borrowers
+                - generic:
+                  - img
+                  - text: Borrowers
+              - link:
+                - /url: /loans
+                - generic:
+                  - img
+                  - text: Loans
+              - link:
+                - /url: /repayments
+                - generic:
+                  - img
+                  - text: Repayments
+              - link:
+                - /url: /savings
+                - generic:
+                  - img
+                  - text: Savings
+              - link:
+                - /url: /investors
+                - generic:
+                  - img
+                  - text: Investors
+              - link:
+                - /url: /settings
+                - generic:
+                  - img
+                  - text: Settings
+      - main:
+        - generic:
+          - generic:
+            - generic:
+              - heading [level=2]: Loans
+              - button [expanded]:
+                - img
+                - text: New Application
+            - generic:
+              - generic:
+                - table:
+                  - rowgroup:
+                    - row:
+                      - columnheader: Borrower
+                      - columnheader: Principal
+                      - columnheader: Interest
+                      - columnheader: Status
+                      - columnheader: Date
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e6] [cursor=pointer]:
+    - img [ref=e7]
+  - alert
+  - dialog:
+    - generic:
+      - heading [level=2]: New Loan Application
+    - generic:
+      - generic:
+        - generic: Borrower
+        - combobox [expanded]:
+          - generic: Select a borrower
+          - img
+        - combobox
+      - generic:
+        - generic: Loan Product
+        - combobox:
+          - generic: Select a product
+          - img
+        - combobox
+      - generic:
+        - generic:
+          - generic: Principal Amount
+          - spinbutton: "0"
+        - generic:
+          - generic: Interest Rate (%)
+          - spinbutton: "0"
+      - generic:
+        - generic:
+          - generic: Duration
+          - spinbutton: "1"
+        - generic:
+          - generic: Repayment Cycle
+          - combobox:
+            - generic: Monthly
+            - img
+          - combobox
+      - button: Submit Application
+    - button:
+      - img
+      - generic: Close
+  - listbox [active] [ref=e11]
+```

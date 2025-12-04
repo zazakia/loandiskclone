@@ -1,0 +1,42 @@
+[LOANS_POST] 2025-12-04T04:34:32.687Z 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$db$2f$index$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["db"].loan.create()` invocation in
+D:\ProjectDev\loandiskclone\.next\dev\server\chunks\[root-of-the-server]__2898bb83._.js:143:156
+
+  140         status: 404
+  141     });
+  142 }
+→ 143 const loan = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$db$2f$index$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["db"].loan.create(
+Foreign key constraint failed on the field: `Loan_productId_fkey (index)`
+PrismaClientKnownRequestError: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$db$2f$index$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["db"].loan.create()` invocation in
+D:\ProjectDev\loandiskclone\.next\dev\server\chunks\[root-of-the-server]__2898bb83._.js:143:156
+
+  140         status: 404
+  141     });
+  142 }
+→ 143 const loan = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$db$2f$index$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["db"].loan.create(
+Foreign key constraint failed on the field: `Loan_productId_fkey (index)`
+    at In.handleRequestError (D:\ProjectDev\loandiskclone\node_modules\@prisma\client\runtime\library.js:123:6854)
+    at In.handleAndLogRequestError (D:\ProjectDev\loandiskclone\node_modules\@prisma\client\runtime\library.js:123:6188)
+    at In.request (D:\ProjectDev\loandiskclone\node_modules\@prisma\client\runtime\library.js:123:5896)
+    at async l (D:\ProjectDev\loandiskclone\node_modules\@prisma\client\runtime\library.js:128:10871)
+    at async POST (D:\ProjectDev\loandiskclone\.next\dev\server\chunks\[root-of-the-server]__2898bb83._.js:143:22)
+    at async AppRouteRouteModule.do (D:\ProjectDev\loandiskclone\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js:5:37789)
+    at async AppRouteRouteModule.handle (D:\ProjectDev\loandiskclone\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js:5:45045)
+    at async responseGenerator (D:\ProjectDev\loandiskclone\.next\dev\server\chunks\node_modules_next_5fc60b7b._.js:14958:38)
+    at async AppRouteRouteModule.handleResponse (D:\ProjectDev\loandiskclone\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js:1:187851)
+    at async handleResponse (D:\ProjectDev\loandiskclone\.next\dev\server\chunks\node_modules_next_5fc60b7b._.js:15020:32)
+    at async handler (D:\ProjectDev\loandiskclone\.next\dev\server\chunks\node_modules_next_5fc60b7b._.js:15073:13)
+    at async DevServer.renderToResponseWithComponentsImpl (D:\ProjectDev\loandiskclone\node_modules\next\dist\server\base-server.js:1413:9)
+    at async DevServer.renderPageComponent (D:\ProjectDev\loandiskclone\node_modules\next\dist\server\base-server.js:1465:24)
+    at async DevServer.renderToResponseImpl (D:\ProjectDev\loandiskclone\node_modules\next\dist\server\base-server.js:1515:32)
+    at async DevServer.pipeImpl (D:\ProjectDev\loandiskclone\node_modules\next\dist\server\base-server.js:1021:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\ProjectDev\loandiskclone\node_modules\next\dist\server\next-server.js:394:17)
+    at async DevServer.handleRequestImpl (D:\ProjectDev\loandiskclone\node_modules\next\dist\server\base-server.js:912:17)
+    at async D:\ProjectDev\loandiskclone\node_modules\next\dist\server\dev\next-dev-server.js:382:20
+    at async Span.traceAsyncFn (D:\ProjectDev\loandiskclone\node_modules\next\dist\trace\trace.js:157:20)
+    at async DevServer.handleRequest (D:\ProjectDev\loandiskclone\node_modules\next\dist\server\dev\next-dev-server.js:378:24)
+    at async invokeRender (D:\ProjectDev\loandiskclone\node_modules\next\dist\server\lib\router-server.js:240:21)
+    at async handleRequest (D:\ProjectDev\loandiskclone\node_modules\next\dist\server\lib\router-server.js:436:24)
+    at async requestHandlerImpl (D:\ProjectDev\loandiskclone\node_modules\next\dist\server\lib\router-server.js:484:13)
+    at async Server.requestListener (D:\ProjectDev\loandiskclone\node_modules\next\dist\server\lib\start-server.js:226:13)
